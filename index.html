@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+  Name: Lindsey Gao
+  Date: July 25, 2020
+  Section: CSE 154 AE
+  This is the index.html page for my webpage that finds the lyrics to a song given
+  user inputed song title and artist
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Search for Lyrics</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Search for the lyrics to your favorite song!</h1>
+    </header>
+
+    <main>
+      <form id="song-form">
+        <div>
+          <label for="artist">Artist Name: </label>
+          <input type="text" placeholder="Type the artist name..." name="artist-name"
+            id="artist" required>
+        </div>
+        <div>
+          <label for="song">Song Title: </label>
+          <input type="text" placeholder="Type a song title..." name="song-name"
+            id="song" required>
+        </div>
+        <button id="submit-btn" type="submit">Find Lyrics!</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Lindsey Gao &copy;2020</p>
+      <p>This web page uses the lyric API, which can be found
+        <a href="https://lyricsovh.docs.apiary.io/#">here</a></p>
+    </footer>
+  </body>
+</html>
